@@ -278,7 +278,7 @@ button:hover{
 @media screen and (max-width : 1025px){
 
     /* hamburger menu  */
-    .nav-bar .menu .hamburger{
+    /* .nav-bar .menu .hamburger{
         display: block;
         background-color: transparent;
         color: white;
@@ -287,7 +287,7 @@ button:hover{
         margin: 2rem;
         justify-self: flex-end;
         align-self: flex-start;
-    }
+    } */
     .nav-bar .menu{
         width: 100vw;
     }
@@ -307,16 +307,20 @@ button:hover{
     }
     
     .nav-bar{
+
         display: flex;
         flex-direction: column-reverse;
         background-color: rgb(37, 35, 35);
+        margin: 3rem;
     }
     .nav-bar .logo{
         display: none;
     }
     .header{
-        padding: 0rem 0rem;
+        width: 100vw;
     }
+        
+    
     
 
 
@@ -329,8 +333,68 @@ button:hover{
         margin-top: 1.5rem;
         margin-bottom: .4rem;
     }
+    .projects{
+        padding: 2rem 0;
+
+    }
     .project-container{
-        width: 60%;
+        margin: 0;
+
     }
     
+}
+
+@media screen and (max-width: 770px){
+    .project-container{
+        margin: 0;
+        width: 44%;
+
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .hero{
+
+        flex-direction: column;
+    }
+    .hero .hero-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+   .project-containers .project-container {
+       width: 90%;
+
+   }
+    .hero .social{
+        flex-direction: row;
+        margin-bottom: 6rem;
+       
+    }
+    .hero .social div{
+        padding: 1rem;
+    }
+}
+
+@media  screen and (max-width : 420px) {
+    .about-me .about-img img{
+        width: 13rem;
+    }
+    .project-containers .project-container{
+        margin: 0;
+        padding: 1rem;
+    }   
+}
+
+@media screen and (max-width: 290px){
+    .hero .social div{
+        padding: 0.4rem;
+    }
+    .about-me .about-content h2{
+        font-size: 2rem;
+    }
+    .about-me .about-content p{
+        font-size: 1rem;
+    }
 }
